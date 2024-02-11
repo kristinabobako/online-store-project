@@ -186,3 +186,17 @@ div.menu a:hover {
   justify-content: space-between;
   margin: 20px 0;
 }
+
+footer {
+  padding: 40px 0;
+}
+
+footer, .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-contacts {
+  margin: 20px 0;
+}

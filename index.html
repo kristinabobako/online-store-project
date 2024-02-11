@@ -3,82 +3,89 @@
 <html lang="en">
 
 <head>
-    <meta charset=“utf-8”>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Наше масло</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset=“utf-8”>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Наше масло</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
 
 </head>
 
 <body>
-    <header>
-        <div class="container-header">
-            <nav>
-                <div class="container-logo">
-                    <div class="logo">
-                        <a href="#"><img src="./img/logotip.png" alt="Логотип Наше масло"></a>
-                    </div>
-                    <div class="name">
-                        <a href="#">НАШЕ МАСЛО</a>
-                        <p>Натуральные Сыродавленые Масла</p>
-                    </div>
-                </div>
-                <div class="menu">
-                    <a href="">Продукция</a>
-                    <a href="">Доставка и оплата</a>
-                    <a href="">Контакты</a>
-                    <a href="">Корзина</a>
-                </div>
-                <div class="site-search">
-                    <input type="search" id="search-input">
-                    <button type="button" id="search-btn" class="fa fa-search"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <main class="container">
-        <div class="filters">
-          <div class="filters-sort">
-            <label for="sort">Сортировка:</label>
-            <select name="sort" id="sort">
-              <option selected value="alphabet">По алфавиту</option>
-              <option value="expensive">Цена: по убыванию</option>
-              <option value="cheap">Цена: по возрастанию</option>
-              <option value="rating">По рейтингу</option>
-            </select>
+  <header>
+    <div class="container-header">
+      <nav>
+        <div class="container-logo">
+          <div class="logo">
+            <a href="#"><img src="./img/logotip.png" alt="Логотип Наше масло"></a>
+          </div>
+          <div class="name">
+            <a href="#">НАШЕ МАСЛО</a>
+            <p>Натуральные Сыродавленые Масла</p>
           </div>
         </div>
-        <section id="shop-items">
-        </section>
-        <p id="nothing-found">Ничего не найдено</p>
-      </main>
-    <footer>
-
-    </footer>
-    <template id="item-template">
-        <div class="shop-item">
-          <img src="">
-          <div class="content">
-            <div class="tags"></div>
-            <h1></h1>
-            <p></p>
-          </div>
-          <div class="footer">
-            <span class="price"></span>
-            <div class="rating"></div>
-          </div>
+        <div class="menu">
+          <a href="">Продукция</a>
+          <a href="">Доставка и оплата</a>
+          <a href="">Контакты</a>
+          <a href="">Корзина</a>
         </div>
+        <div class="site-search">
+          <input type="search" id="search-input">
+          <button type="button" id="search-btn" class="fa fa-search"></i>
         </div>
-      </template>
-      <script src="script.js"></script>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div class="filters">
+      <div class="filters-sort">
+        <label for="sort">Сортировка:</label>
+        <select name="sort" id="sort">
+          <option selected value="alphabet">По алфавиту</option>
+          <option value="expensive">Цена: по убыванию</option>
+          <option value="cheap">Цена: по возрастанию</option>
+          <option value="rating">По рейтингу</option>
+        </select>
+      </div>
+    </div>
+    <section id="shop-items">
+    </section>
+    <p id="nothing-found">Ничего не найдено</p>
+  </main>
+  <footer>
+    <h2>Контакты</h2>
+    <div class="footer-contacts">
+      <a href="tel:+11234567890">8-029-611-54-16</a>
+      <a
+        href="https://yandex.by/maps/?from=mapframe&ll=27.562854%2C53.770096&mode=usermaps&source=mapframe&um=constructor%3A1e441796a824faf799acdf1ca829fa88f48dc26ec5ff203aa26f85fa675544fd&utm_source=mapframe&z=10">агр.
+        Самохваловичи, ул. Ковалева, 6</a>
+    </div>
+    <p class="time">Время работы: с 9.00 до 21.00</p>
+  </footer>
+  <template id="item-template">
+    <div class="shop-item">
+      <img src="">
+      <div class="content">
+        <div class="tags"></div>
+        <h1></h1>
+        <p></p>
+      </div>
+      <div class="footer">
+        <span class="price"></span>
+        <div class="rating"></div>
+      </div>
+    </div>
+    </div>
+  </template>
+  <script src="script.js"></script>
 </body>
 
 </html>
